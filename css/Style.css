@@ -1,0 +1,134 @@
+/* ==============================================
+ PROJECT: SVM Labs // Project Aegis
+ FEATURE: Core Enterprise Branding Stylesheet
+ =============================================*/
+ 
+/* 1. Global Reset & Typography Rules */
+body {
+  background-color: #12161a; /* Deep Tech Slate background */
+  color: #e2e8f0;       /* Crisp off-white readable text */
+  font-family: system-ui, -apple-system, Sans-Serif; /* Clean modern font */
+  margin: 0;
+  padding: 15px;        /* Keeps content cleanly away from screen edges */
+  line-height: 1.6;     /* Gives sentences clean vertical breathing room */
+}
+
+/* 2. Header and Navigational Layout */
+header {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #38bdf8;       /* Bright security-blue accent for corporate logo */
+  letter-spacing: 0.5px;
+}
+
+nav {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #94a3b8;      /* Subdued grey color for secondary navigation */
+}
+
+/* 3. Divider Lines Customization */
+hr {
+  border: 0;
+  border-top: 1px solid #232930; /* Clean, subtitle seperation line */
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* 4. Main Application Section Styling */
+h1 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#action-center {
+  background-color: #1a202c; /* Contrasting background box for user workspace */
+  border: 1px solid #2d3748; /* Crisp container outline border */
+  border-radius: 8px;     /* Smooth, rounded modern design corners */
+  padding: 15px;
+  margin-top: 20px;
+}
+
+#action-center h3 {
+ margin-top: 0;
+ color: #38bdf8;
+}
+
+/* 5. Footer Branding Rules */
+footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #64748b;       /* Muted grey color for secondary copyright info */
+  margin-top: 30px;
+}
+
+/* 6. Interactive Workspace Form Fields */
+#article-input {
+  width: 100%;
+  height: 150px;
+  background-color: #0f1216; /* Inverted deeper dark for input fields */
+  color: #f8fafc;
+  border: 1px solid #475569;
+  border-radius: 6px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  resize: none;             /* Prevents mobile layout distortion */
+  box-sizing: border-box;   /* Ensures perfect width alignment */
+  margin-bottom: 15px;
+}
+
+#article-input-focus {
+  outline: none;
+  border-color: #38bdf8;    /* Highlights blue when the user types */
+}
+
+#verify-btn {
+  width: 100%;
+  background-color: #38bdf8; /* Bright corporate primary color */
+  color: #0f1216;           /* Dark text for strong contrast */
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#verify-btn:active {
+  background-color: #0284c7; /* Darkens slightly when pressed on screen */
+}
+
+/* 7. Dynamic Analytics Report Board */
+.report-card {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #0f1216;
+  border-left: 4px solid #38bdf8;   /* Highlighted left border line */
+  border-radius: 4px;
+}
+
+.report-card h4 {
+  margin-top: 0;
+  color: #ffffff;
+  border-bottom: 1px solid #232930;
+  padding-bottom: 5px;
+}
+
+.metric-line {
+  font-size: 0.95rem;
+  margin: 6px 0;
+  color: #94a3b8;
+}
+
+.metric-line span {
+  color: 38bdf8;
+  font-weight: bold;
+}
