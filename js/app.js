@@ -26,6 +26,10 @@ style="border-left-color: #ef4444;">
   const totalWords = textData.split(/\s+/).length;
   const readingTime = Math.ceil(totalWords/200);
   
+  // NEW UPGRADE METRICS
+  const totalCharacters = textData.length;
+  const totalParagraphs = textData.split("\n").filter(p=> p.trim() !== "").length;
+  
   // 2. Security Compliance Logic (Ported from our Python blueprint)
   const bannedKeywords = ["SHOCKING", "BUY", "FREE", "MIRACLE"];
   let isSecurityViolation = false;
@@ -63,6 +67,11 @@ style="border-left-color: #ef4444;">
     <div class="metric-line">Analysis Target:
     <span>Active Manuscript Block</span></div>
     <div class="metric-line">Total Word Count: <span>${totalWords} words</span></div>
+    <div class="metric-line">Total Characters: <span>${totalCharacters}</span></div>
+    <div class="metric-line">Paragraph Count: <span>${totalParagraphs} block(s)</span></div>
+    
+    
+    
     <div class="metric-line">Est. Reading Time: <span>~ ${readingTime} minute(s)</span></div>
     <div class="metric-line">Security Pipeline: <span style="color: ${securityColor};">${securityStatusText}</span></div>
     </div>
