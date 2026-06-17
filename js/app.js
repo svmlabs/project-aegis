@@ -77,3 +77,21 @@ style="border-left-color: #ef4444;">
     </div>
     `;
 });
+
+// ==========================================
+// FEATURE UPGRADE: USER WORKSPACE RESET PIPELINE (SVM-111)
+// ==========================================
+const clearButton = document.getElementById("clear-btn");
+
+clearButton.addEventListener("click", () => {
+  // 1. Find the textarea directly on the page and flush it
+  const inputArea = document.querySelector("textarea");
+  if (inputArea) {
+    inputArea.value = "";
+  }
+  
+  // 2. Wipe out the displayed analytics report card data
+  resultsPanel.innerHTML = "";
+  
+  console.log("Registry Log: Workspace cleared and reset to baseline parameters.");
+});
